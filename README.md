@@ -1,2 +1,2 @@
 # instagram-clone
-템플릿 파일(JS 제외)
+https://devies2.github.io/port_instagram/
