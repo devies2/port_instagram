@@ -1,0 +1,386 @@
+.circle {
+    position: absolute;
+    top: 6.5px;
+    right: 6.3px;
+    z-index: 99999;
+    border: 1px solid #000;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+}
+
+/* 프로필 상단 */
+.profile--wrapper {
+    width: 935px;
+    height: 200px;
+    /* background: rgb(216, 255, 250); */
+    border-bottom: 1px solid gainsboro;
+}
+
+.feed_top {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 44px;
+    display: flex;
+    /* background: rgb(255, 225, 219); */
+}
+
+.pro_img {
+    width: 291.66px;
+    height: 150px;
+    margin-right: 30px;
+}
+
+.pro_img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mypro--text {
+    width: 613.34px;
+
+}
+
+.mypro_top {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    height: 40px;
+}
+
+.mypro_edit {
+    display: flex;
+    align-items: center;
+}
+.mypro_top .mypro_edit .feed--button {
+    cursor: pointer;
+    width: 93.8px;
+    height: 29.6px;
+    font-size: 14px;
+    background: #fafafa;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+}
+.setting {
+    cursor: pointer;
+}
+.mypro_edit .setting img {
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+}
+
+.mypro_mid {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    height: 17.6px;
+
+}
+
+.mypro_id {
+    margin-right: 20px;
+}
+.feed--num {
+    display: flex;
+    padding-right: 46px;
+}
+
+.feed_count {
+    margin-right: 5px;
+}
+.mypro_bottom {
+    /* position: absolute; */
+    /* background: yellow; */
+    width: 100%;
+    height: 48px;
+}
+
+.feed--intro {
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    /* float: left; */
+}
+
+.mypro_name {
+    float: left;
+}
+
+.mypro_info {
+    float: left;
+}
+
+/* 하단 피드 네비게이션 */
+.content--nav {
+
+}
+
+.content--nav ul {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.content--nav ul li {
+    cursor: pointer;
+}
+.content--nav ul li .nav-specify {
+    margin-left: 6px;
+}
+
+.feed-nav {
+    display: flex;
+    /* width: 100%; */
+    width: 57px;
+    height: 53px;
+    margin-right: 60px;
+    align-items: center;
+}
+
+.feed-nav.selected {
+    border-top: 1px solid #000;
+}
+
+.feed-nav img {
+    width: 12px;
+    height: 12px;
+}
+
+/* 하단 피드 */
+.feed_content {
+    
+}
+.feed_mine {
+    /* position: relative; */
+    /* height: 3000px; */
+}
+
+a.myfeed {
+    background: url("../img/pic_3.jpg");
+    width: 275px;
+    height: 275px;
+    background-size: cover;
+    margin-right: 28px;
+    margin-bottom: 28px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    /* border-box는 빼도 무방? */
+    box-sizing: border-box;
+    position: relative;
+    text-decoration: none;
+}
+.myfeed {
+    background: url("../img/pic_3.jpg");
+    width: 275px;
+    height: 275px;
+    background-size: cover;
+    margin-right: 28px;
+    margin-bottom: 28px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    /* border-box는 빼도 무방? */
+    box-sizing: border-box;
+    position: relative;
+    text-decoration: none;
+}
+.feed_mine a {
+    text-decoration: none;
+}
+
+.myfeed .fav {
+    color: #fff;
+    opacity: 0;
+    z-index: 99999;
+    margin: 0 auto;
+    display: flex;
+}
+
+.fav .like_num {
+    display: flex;
+    margin-right: 20px;
+}
+.fav .like_num img {
+    margin-right: 10px;
+}
+.fav .comment_num {
+    display: flex;
+}
+
+.fav .comment_num img {
+    margin-right: 10px;
+}
+.myfeed:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.40);
+}
+
+.myfeed:hover .fav {
+    opacity: 1;
+}
+
+
+/* 모달창 구현 */
+.modal2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+.md_overlay2 {
+    background-color: rgba(0, 0, 0, 0.60);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.md_content2 {
+    width: 400px;
+    height: 440px;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    border-radius: 13px;
+}
+
+.modal2.hidden2 {
+    display: none;
+}
+
+.modal2 button {
+    display: block;
+    margin: 0 auto;
+}
+
+.modal_wrapper2 .wrap {
+    width: 100%;
+    /* height: 48px; */
+    border-bottom: 1px solid gainsboro;
+    font-size: 14px;
+    color: #000;
+    cursor: default;
+}
+.modal_wrapper2 .wrap div {
+    margin: 17.5px auto;
+}
+
+.modal_wrapper2 .wrap_bot .btn_close2 {
+    width: 100%;
+    height: 48px;
+    padding: 0 auto;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+}
+.btn_close2 {
+    all: unset;
+}
+
+
+/* 모달창 구현 3 */
+.modal3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+.md_overlay3 {
+    background-color: rgba(0, 0, 0, 0.60);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.md_content3 {
+    width: 400px;
+    height: 221px;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    border-radius: 13px;
+}
+
+.modal3.hidden3 {
+    display: none;
+}
+
+.modal3 button {
+    display: block;
+    margin: 0 auto;
+}
+
+.modal_wrapper3 .wrap_title {
+    width: 100%;
+    /* height: 48px; */
+    border-bottom: 1px solid gainsboro;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal_wrapper3 .wrap_title div {
+    margin: 28px auto;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.modal_wrapper3 .wrap {
+    width: 100%;
+    /* height: 48px; */
+    border-bottom: 1px solid gainsboro;
+    font-size: 14px;
+    font-weight: 600;
+    /* color: #000; */
+    cursor: pointer;
+}
+
+.modal_wrapper3 .wrap div {
+    margin: 17.5px auto;
+}
+
+.modal_wrapper3 .wrap_bot .btn_close3 {
+    width: 100%;
+    height: 48px;
+    padding: 0 auto;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+}
+
+.wrap_blue {
+    color: #0095f6;
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+
+.wrap_red {
+    color: #ed4956;
+    font-size: 14px;
+    font-weight: 600;
+}
+.btn_close3 {
+    all: unset;
+}
